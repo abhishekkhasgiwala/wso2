@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="SimpleQuoteProxy" startOnLoad="true" transports="https http" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <endpoint name="endpoint_urn_uuid_b97e87c3-f2f0-45bd-89a4-5eaf946509a1">
+            <address uri="http://localhost:8080/axis2/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpSoap11Endpoint/"/>
+        </endpoint>
+        <inSequence>
+            <log description="Input_Request">
+                <property expression="fn:concat('Welcome ', //m0:getQuote/m0:request/m1:symbol)" name="Input Request" xmlns:m0="http://services.samples" xmlns:m1="http://services.samples/xsd"/>
+            </log>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+    <publishWSDL preservePolicy="true" uri="http://localhost:8080/axis2/services/SimpleStockQuoteService?wsdl"/>
+</proxy>

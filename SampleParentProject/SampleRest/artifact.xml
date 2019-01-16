@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="SampleRest" groupId="com.sample.SampleRest.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/SampleRest.xml</file>
+    </artifact>
+    <artifact name="SampleSeq" groupId="com.sample.SampleRest.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/SampleSeq.xml</file>
+    </artifact>
+    <artifact name="SimpleQuoteEP" groupId="com.sample.SampleRest.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/SimpleQuoteEP.xml</file>
+    </artifact>
+    <artifact name="SimpleQuoteProxy" groupId="com.sample.SampleRest.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/SimpleQuoteProxy.xml</file>
+    </artifact>
+</artifacts>
