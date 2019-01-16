@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="HelloRestSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log description="InsideSequence">
+        <property name="InsideHelloRestSeq" value="Rest Sequence Start"/>
+    </log>
+    <class name="com.example.HelloMediator"/>
+    <log description="EndSequence">
+        <property expression="get-property(&quot;CITY&quot;)" name="CITY"/>
+    </log>
+    <log description="InsideSequence">
+        <property name="InsideHelloRestSeq" value="Rest Sequence End"/>
+    </log>
+    <respond description="Respond"/>
+</sequence>
