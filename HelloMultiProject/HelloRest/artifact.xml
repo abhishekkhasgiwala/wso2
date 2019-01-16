@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><artifacts>
-    <artifact name="HelloRest" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
-        <file>src/main/synapse-config/api/HelloRest.xml</file>
-    </artifact>
-    <artifact name="HelloRestSeq" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
-        <file>src/main/synapse-config/sequences/HelloRestSeq.xml</file>
-    </artifact>
-</artifacts>
