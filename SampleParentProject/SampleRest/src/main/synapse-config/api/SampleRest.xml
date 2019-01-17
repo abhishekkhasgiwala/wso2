@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/hello" name="SampleRest" xmlns="http://ws.apache.org/ns/synapse">
+    <resource inSequence="SampleSeq" methods="GET" uri-template="/weather/{city}">
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
